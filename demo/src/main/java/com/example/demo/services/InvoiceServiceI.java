@@ -1,6 +1,5 @@
 package com.example.demo.services;
 
-import java.util.List;
 import java.util.Optional;
 
 import com.example.demo.persistence.model.Invoice;
@@ -10,5 +9,5 @@ import com.example.demo.persistence.model.Invoice;
  */
 public interface InvoiceServiceI {    
     Optional<Invoice> consultInvoice(long customerId);
-    double calculateTotalAmount(Long customerId);
+    Optional<Invoice> getInvoiceById(long invoiceId);
 }
